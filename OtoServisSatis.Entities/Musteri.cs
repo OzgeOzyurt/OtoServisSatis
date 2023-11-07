@@ -7,7 +7,7 @@ namespace OtoServisSatis.Entities
     {
         public int Id { get; set; }
         
-        [Display(Name = "Araç No")]
+        [Display(Name = "Araç Modeli")]
         public int AracId { get; set; }
         
         [StringLength(50), Display(Name = "Adı"), Required(ErrorMessage = "{0} Boş Bırakılamaz!")]
@@ -16,7 +16,7 @@ namespace OtoServisSatis.Entities
         [StringLength(50), Display(Name = "Soyadı"), Required(ErrorMessage = "{0} Boş Bırakılamaz!")]
         public string Soyadi { get; set; }
         
-        [StringLength(11), Display(Name = "Tc Numarası")]
+        [StringLength(11), Display(Name = "TC Numarası")]
         public string? TcNo { get; set; }
         
         [StringLength(50), Required(ErrorMessage = "{0} Boş Bırakılamaz!")]
@@ -29,7 +29,8 @@ namespace OtoServisSatis.Entities
         public string? Telefon { get; set; }
         
         public string? Notlar { get; set; }
-       
+
+        [Display(Name = "Araç Modeli")]
         public virtual Arac? Arac { get; set; }
     }
 }

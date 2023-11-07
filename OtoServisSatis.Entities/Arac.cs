@@ -25,7 +25,7 @@ namespace OtoServisSatis.Entities
         [Display(Name = "Model Yılı")]
         public int ModelYili { get; set; }
 
-        [Display(Name = "Satşta Mı?")] 
+        [Display(Name = "Satışta Mı?")] 
         public bool SatistaMi { get; set; }
         
         [Required(ErrorMessage = "{0} boş bırakılamaz!")]
