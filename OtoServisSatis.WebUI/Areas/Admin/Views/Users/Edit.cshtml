@@ -43,7 +43,7 @@
                 <input asp-for="Sifre" class="form-control" />
                 <span asp-validation-for="Sifre" class="text-danger"></span>
             </div>
-            <div class="form-group form-check">
+            <div class="form-group form-check mt-3">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="AktifMi" /> @Html.DisplayNameFor(model => model.AktifMi)
                 </label>
@@ -53,7 +53,7 @@
                 <select asp-for="RolId" class="form-select" asp-items="ViewBag.RolId"></select>
                 <span asp-validation-for="RolId" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group mt-3">
                 <input type="submit" value="Kaydet" class="btn btn-primary" />
             </div>
         </form>

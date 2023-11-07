@@ -7,7 +7,7 @@ namespace OtoServisSatis.Entities
     {
         public int Id { get; set; }
 
-        [StringLength(50), Display(Name = "Rol Adı"), Required(ErrorMessage = "{0} boş bırakılamaz!")]
+        [StringLength(50), Display(Name = "Marka Adı"), Required(ErrorMessage = "{0} boş bırakılamaz!")]
         public string Adi { get; set; }
     }
 }
