@@ -21,7 +21,7 @@ namespace OtoServisSatis.Entities
         [Display(Name = "Yapılan İşlemler")] 
         public string? YapilanIslemler { get; set; }
 
-        [Display(Name = "Granati Kapsamında Mı?"), Required(ErrorMessage = "{0} Boş Bırakılamaz!")] 
+        [Display(Name = "Garanti Kapsamında Mı?"), Required(ErrorMessage = "{0} Boş Bırakılamaz!")] 
         public bool GarantiKapsamindaMi { get; set; }
        
         [StringLength(15), Display(Name = "Araç Plakası"), Required(ErrorMessage = "{0} Boş Bırakılamaz!")]
