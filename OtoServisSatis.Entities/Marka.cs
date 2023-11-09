@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Xml.Linq;
 
 namespace OtoServisSatis.Entities
 {
@@ -7,7 +6,8 @@ namespace OtoServisSatis.Entities
     {
         public int Id { get; set; }
 
-        [StringLength(50), Display(Name = "Marka Adı"), Required(ErrorMessage = "{0} boş bırakılamaz!")]
+        [StringLength(50)]
+        [Display(Name = "Adı"), Required(ErrorMessage = "{0} Boş Bırakılamaz!")]
         public string Adi { get; set; }
     }
 }
