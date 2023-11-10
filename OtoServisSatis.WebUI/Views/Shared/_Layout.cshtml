@@ -41,7 +41,7 @@
                     }
                     else
                     {
-                        <a asp-controller="Account" asp-action="Login" class="btn btn-primary">Giriş Yap</a>
+                        <a asp-controller="Account" asp-action="Login" class="btn btn-success">Giriş Yap</a>
                         <a asp-controller="Account" asp-action="Register" class="btn btn-primary">Kayıt Ol</a>
                     }                   
                 </div>
@@ -49,6 +49,7 @@
         </nav>
     </header>
     <div class="container">
+        @Html.Raw(TempData["Message"])
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
