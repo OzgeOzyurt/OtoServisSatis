@@ -6,10 +6,10 @@ namespace OtoServisSatis.Entities
     {
         public int Id { get; set; }
 
-        [StringLength(50), Display(Name = "Adı"), Required(ErrorMessage ="{0} boş bırakılamaz!")]
+        [StringLength(50), Display(Name = "Ad"), Required(ErrorMessage ="{0} boş bırakılamaz!")]
         public string Adi { get; set; }
 
-        [StringLength(50), Display(Name = "Soyadı"), Required(ErrorMessage = "{0} boş bırakılamaz!")]
+        [StringLength(50), Display(Name = "Soyad"), Required(ErrorMessage = "{0} boş bırakılamaz!")]
         public string Soyadi { get; set; }
 
         [StringLength(50), Required(ErrorMessage = "{0} boş bırakılamaz!")]
